@@ -1,0 +1,51 @@
+bodu {
+	background: red;
+	color: black;
+	font-family: Montserrat;
+}
+
+#main-container {
+	margin: 30px auto;
+}
+
+.iphone {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.site-footer {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.login-box,
+.signup-box {
+	background-color: white;
+	border: 1px solid red;
+	border-radius: 3px;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.signup-form {
+	width: 65%;
+	margin: 0 auto;
+}
+
+.signup-form h2 {
+	color: red;
+	font-size: 1.2em;
+}
+
+.signup-form .btn.btn-fb {
+	background-color: pink;
+	font-size: .9em;
+}
+
+.signup-form .btn.btn-fb:hover {
+	background-color: red;
+}
+
+.signup-form .btn.btn-signup {
+	background-color: red;
+}
