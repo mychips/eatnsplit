@@ -19,5 +19,9 @@
   "dependencies": {
     "express": "^4.15.4",
     "materialize-css": "^0.100.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
   }
 }

@@ -1,5 +1,5 @@
-bodu {
-	background: red;
+body {
+	background: ;
 	color: black;
 	font-family: Montserrat;
 }
@@ -10,7 +10,6 @@ bodu {
 
 .iphone {
 	max-width: 100%;
-	max-height: 100%;
 }
 
 .site-footer {
@@ -30,6 +29,7 @@ bodu {
 .signup-form {
 	width: 65%;
 	margin: 0 auto;
+	color: red;
 }
 
 .signup-form h2 {
@@ -48,4 +48,18 @@ bodu {
 
 .signup-form .btn.btn-signup {
 	background-color: red;
+	color: white;
+}
+
+.l-signin {
+	color: red;
+}
+
+.dropdown-button {
+	background-color: pink;
+}
+
+.dropdown-button:hover {
+	background-color: red;
+	color: white;
 }
