@@ -2,8 +2,10 @@ var express = require('express');
 
 var app = express();
 
+app.set('view engine', 'pug')
+
 app.get('/', function (req, res) {
-	res.send('Eat & Split');
+	res.render('index');
 })
 
 app.listen(7000, function (err) {
