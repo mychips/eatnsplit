@@ -20,6 +20,7 @@
   "dependencies": {
     "express": "^4.15.4",
     "materialize-css": "^0.100.1",
+    "page": "^1.7.1",
     "pug": "^2.0.0-rc.3"
   },
   "devDependencies": {
@@ -28,6 +29,7 @@
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
   }
 }
