@@ -153,9 +153,24 @@ module.exports = hyperx(belCreateElement, {comments: true})
 module.exports.default = module.exports
 module.exports.createElement = belCreateElement
 
-},{"global/document":3,"hyperx":6,"on-load":9}],2:[function(require,module,exports){
+},{"global/document":4,"hyperx":7,"on-load":10}],2:[function(require,module,exports){
 
 },{}],3:[function(require,module,exports){
+/* global HTMLElement */
+
+'use strict'
+
+module.exports = function emptyElement (element) {
+  if (!(element instanceof HTMLElement)) {
+    throw new TypeError('Expected an element')
+  }
+
+  var node
+  while ((node = element.lastChild)) element.removeChild(node)
+  return element
+}
+
+},{}],4:[function(require,module,exports){
 (function (global){
 var topLevel = typeof global !== 'undefined' ? global :
     typeof window !== 'undefined' ? window : {}
@@ -176,7 +191,7 @@ if (typeof document !== 'undefined') {
 module.exports = doccy;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"min-document":2}],4:[function(require,module,exports){
+},{"min-document":2}],5:[function(require,module,exports){
 (function (global){
 var win;
 
@@ -193,7 +208,7 @@ if (typeof window !== "undefined") {
 module.exports = win;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 module.exports = attributeToProperty
 
 var transform = {
@@ -214,7 +229,7 @@ function attributeToProperty (h) {
   }
 }
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 var attrToProp = require('hyperscript-attribute-to-property')
 
 var VAR = 0, TEXT = 1, OPEN = 2, CLOSE = 3, ATTR = 4
@@ -494,12 +509,12 @@ var closeRE = RegExp('^(' + [
 ].join('|') + ')(?:[\.#][a-zA-Z0-9\u007F-\uFFFF_:-]+)*$')
 function selfClosing (tag) { return closeRE.test(tag) }
 
-},{"hyperscript-attribute-to-property":5}],7:[function(require,module,exports){
+},{"hyperscript-attribute-to-property":6}],8:[function(require,module,exports){
 module.exports = Array.isArray || function (arr) {
   return Object.prototype.toString.call(arr) == '[object Array]';
 };
 
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 'use strict';
 
 var range; // Create a range object for efficently rendering strings to elements.
@@ -1183,7 +1198,7 @@ var morphdom = morphdomFactory(morphAttrs);
 
 module.exports = morphdom;
 
-},{}],9:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 /* global MutationObserver */
 var document = require('global/document')
 var window = require('global/window')
@@ -1272,7 +1287,7 @@ function eachMutation (nodes, fn) {
   }
 }
 
-},{"global/document":3,"global/window":4}],10:[function(require,module,exports){
+},{"global/document":4,"global/window":5}],11:[function(require,module,exports){
 (function (process){
   /* globals require, module */
 
@@ -1898,7 +1913,7 @@ function eachMutation (nodes, fn) {
   page.sameOrigin = sameOrigin;
 
 }).call(this,require('_process'))
-},{"_process":12,"path-to-regexp":11}],11:[function(require,module,exports){
+},{"_process":13,"path-to-regexp":12}],12:[function(require,module,exports){
 var isarray = require('isarray')
 
 /**
@@ -2290,7 +2305,7 @@ function pathToRegexp (path, keys, options) {
   return stringToRegexp(path, keys, options)
 }
 
-},{"isarray":7}],12:[function(require,module,exports){
+},{"isarray":8}],13:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -2476,7 +2491,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],13:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 var bel = require('bel') // turns template tag into DOM elements
 var morphdom = require('morphdom') // efficiently diffs + morphs two DOM elements
 var defaultEvents = require('./update-events.js') // default events to be copied when dom elements update
@@ -2520,7 +2535,7 @@ module.exports.update = function (fromNode, toNode, opts) {
   }
 }
 
-},{"./update-events.js":14,"bel":1,"morphdom":8}],14:[function(require,module,exports){
+},{"./update-events.js":15,"bel":1,"morphdom":9}],15:[function(require,module,exports){
 module.exports = [
   // attribute events (can be set with attributes)
   'onclick',
@@ -2558,9 +2573,10 @@ module.exports = [
   'onfocusout'
 ]
 
-},{}],15:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 var page = require('page');
 var yo = require('yo-yo');
+var empty = require('empty-element');
 
 var main = document.getElementById('main-container');
 
@@ -2606,9 +2622,9 @@ page('/signup', function (ctx, next) {
 			</div>
 		</div>`;
 
-	main.appendChild(el);
+	empty(main).appendChild(el);
 });
 
 page();
 
-},{"page":10,"yo-yo":13}]},{},[15]);
+},{"empty-element":3,"page":11,"yo-yo":14}]},{},[16]);

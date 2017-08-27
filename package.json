@@ -15,6 +15,7 @@
   "author": "Erick Sarmiento",
   "license": "MIT",
   "dependencies": {
+    "empty-element": "^1.0.0",
     "express": "^4.15.4",
     "materialize-css": "^0.100.1",
     "page": "^1.7.1",
