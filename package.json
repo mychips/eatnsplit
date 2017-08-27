@@ -18,7 +18,8 @@
     "express": "^4.15.4",
     "materialize-css": "^0.100.1",
     "page": "^1.7.1",
-    "pug": "^2.0.0-rc.3"
+    "pug": "^2.0.0-rc.3",
+    "yo-yo": "^1.4.1"
   },
   "devDependencies": {
     "babelify": "^7.3.0",
