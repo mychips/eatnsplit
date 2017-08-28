@@ -6928,7 +6928,6 @@ body {
 .login-box,
 .signup-box {
   background-color: white;
-  border: 1px solid red;
   border-radius: 3px;
   padding: 10px 0;
   text-align: center; }

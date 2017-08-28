@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Title demo</title>
+</head>
+<body>
+  <script src="build/build.js"></script>
+  <script>
+    var title = require('title');
+
+    var n = 0;
+
+    var timer = setInterval(function(){
+      if (n++ == 100) {
+        title('Upload complete');
+        clearInterval(timer);
+        setTimeout(function(){
+          title.reset();
+        }, 2000);
+      } else {
+        title('%s% - %o', n);
+      }
+    }, 30);
+  </script>
+</body>
+</html>
