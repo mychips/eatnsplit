@@ -1,13 +1,11 @@
+$secundary-color: #EE6E73;
+
 @import "node_modules/materialize-css/sass/materialize.scss";
 
 body {
 	background: white;
 	color: black;
 	font-family: Montserrat;
-}
-
-#main-container {
-	margin: 30px auto;
 }
 
 .iphone {
@@ -27,10 +25,15 @@ body {
 	text-align: center;
 }
 
+.eatnsplit {
+	font-family: 'Oleo Script' !important;
+	font-size: 42px;
+}
+
 .signup-form {
 	width: 65%;
 	margin: 0 auto;
-	color: red;
+	color: $secundary-color;
 }
 
 .signup-form h2 {
@@ -39,28 +42,37 @@ body {
 }
 
 .signup-form .btn.btn-fb {
-	background-color: pink;
+	background-color: $secundary-color;
 	font-size: .9em;
 }
 
 .signup-form .btn.btn-fb:hover {
-	background-color: red;
+	background-color: pink;
 }
 
 .signup-form .btn.btn-signup {
-	background-color: red;
+	background-color: $secundary-color;
 	color: white;
 }
 
 .l-signin {
-	color: red;
+	color: $secundary-color;
 }
 
 .dropdown-button {
-	background-color: pink;
+	background-color: $secundary-color;
+	color: white;
 }
 
 .dropdown-button:hover {
-	background-color: red;
-	color: white;
+	background-color: pink;
+	color: black;
+}
+
+.timeline {
+	padding: 30px 0;
+}
+
+.landing {
+	margin: 30px auto;
 }

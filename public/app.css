@@ -6915,9 +6915,6 @@ body {
   color: black;
   font-family: Montserrat; }
 
-#main-container {
-  margin: 30px auto; }
-
 .iphone {
   max-width: 100%; }
 
@@ -6932,32 +6929,43 @@ body {
   padding: 10px 0;
   text-align: center; }
 
+.eatnsplit {
+  font-family: 'Oleo Script' !important;
+  font-size: 42px; }
+
 .signup-form {
   width: 65%;
   margin: 0 auto;
-  color: red; }
+  color: #EE6E73; }
 
 .signup-form h2 {
   color: red;
   font-size: 1.2em; }
 
 .signup-form .btn.btn-fb, .signup-form .btn-fb.btn-large {
-  background-color: pink;
+  background-color: #EE6E73;
   font-size: .9em; }
 
 .signup-form .btn.btn-fb:hover, .signup-form .btn-fb.btn-large:hover {
-  background-color: red; }
+  background-color: pink; }
 
 .signup-form .btn.btn-signup, .signup-form .btn-signup.btn-large {
-  background-color: red;
+  background-color: #EE6E73;
   color: white; }
 
 .l-signin {
-  color: red; }
+  color: #EE6E73; }
 
 .dropdown-button {
-  background-color: pink; }
+  background-color: #EE6E73;
+  color: white; }
 
 .dropdown-button:hover {
-  background-color: red;
-  color: white; }
+  background-color: pink;
+  color: black; }
+
+.timeline {
+  padding: 30px 0; }
+
+.landing {
+  margin: 30px auto; }
