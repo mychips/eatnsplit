@@ -6911,12 +6911,18 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   /*shape-rendering: crispEdges;*/ }
 
 body {
-  background: white;
   color: black;
   font-family: Montserrat; }
 
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin-bottom: 20px; }
+
 .iphone {
-  max-width: 100%; }
+  max-width: 100%;
+  max-height: auto; }
 
 .site-footer {
   text-transform: uppercase;
@@ -6944,7 +6950,7 @@ body {
 
 .signup-form .btn.btn-fb, .signup-form .btn-fb.btn-large {
   background-color: #EE6E73;
-  font-size: .9em; }
+  font-size: .8em; }
 
 .signup-form .btn.btn-fb:hover, .signup-form .btn-fb.btn-large:hover {
   background-color: pink; }

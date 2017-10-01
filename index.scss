@@ -3,13 +3,20 @@ $secundary-color: #EE6E73;
 @import "node_modules/materialize-css/sass/materialize.scss";
 
 body {
-	background: white;
 	color: black;
 	font-family: Montserrat;
 }
 
+.responsive-img {
+	max-width: 100%;
+	height: auto;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
 .iphone {
 	max-width: 100%;
+	max-height: auto;
 }
 
 .site-footer {
@@ -43,7 +50,7 @@ body {
 
 .signup-form .btn.btn-fb {
 	background-color: $secundary-color;
-	font-size: .9em;
+	font-size: .8em;
 }
 
 .signup-form .btn.btn-fb:hover {

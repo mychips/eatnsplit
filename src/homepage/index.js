@@ -8,7 +8,12 @@ page('/', function (ctx, next) {
 	var main = document.getElementById('main-container');
 	
 	var pictures = [
-		1, 2, 3, 4, 5
+		{
+			user: {
+				username: 'Rodizio'
+				
+			}
+		}
 	];
 
 	empty(main).appendChild(template(pictures));

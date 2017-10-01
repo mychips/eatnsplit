@@ -2606,7 +2606,12 @@ page('/', function (ctx, next) {
 	title('Eat & Split');
 	var main = document.getElementById('main-container');
 
-	var pictures = [1, 2, 3, 4, 5];
+	var pictures = [{
+		user: {
+			username: 'Rodizio'
+
+		}
+	}];
 
 	empty(main).appendChild(template(pictures));
 });
@@ -2614,14 +2619,14 @@ page('/', function (ctx, next) {
 },{"./template":18,"empty-element":3,"page":11,"title":14}],18:[function(require,module,exports){
 var yo = require('yo-yo');
 var layout = require('../layout');
-var picture = require('../res-card');
+var carrusel = require('../res-carrusel');
 
 module.exports = function (pictures) {
 	var el = yo`<div class="container timeline">
 		<div class="row">
 			<div class="col s12 m10 offset-m1 l6 offset-l3">
-				${pictures.map(function (pic) {
-		return picture;
+				${pictures.map(function () {
+		return carrusel;
 	})}
 			</div>
 		</div>
@@ -2630,7 +2635,7 @@ module.exports = function (pictures) {
 	return layout(el);
 };
 
-},{"../layout":21,"../res-card":22,"yo-yo":15}],19:[function(require,module,exports){
+},{"../layout":21,"../res-carrusel":22,"yo-yo":15}],19:[function(require,module,exports){
 var page = require('page');
 
 require('./homepage');
@@ -2648,7 +2653,7 @@ module.exports = function landing(box) {
 			<div class="col s10 push-s1">
 				<div class="row">
 					<div class="col m5 hide-on-small-only">
-						<img class="iphone" src="phones.png" />
+						<img class="iphone" src="iphone.png" />
 					</div>
 					${box}
 				</div>

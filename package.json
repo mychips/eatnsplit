@@ -24,6 +24,7 @@
     "yo-yo": "^1.4.1"
   },
   "devDependencies": {
+    "ava": "^0.22.0",
     "babelify": "^7.3.0",
     "browserify": "^14.4.0",
     "gulp": "^3.9.1",
@@ -33,6 +34,7 @@
   },
   "scripts": {
     "build": "gulp",
-    "start": "gulp watch & node server.js"
+    "start": "gulp watch & node server.js",
+    "test": "ava"
   }
 }
