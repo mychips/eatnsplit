@@ -6975,3 +6975,9 @@ body {
 
 .landing {
   margin: 30px auto; }
+
+.content {
+  height: 100%; }
+
+.timeline {
+  padding: 0; }

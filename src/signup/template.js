@@ -23,7 +23,9 @@ var signupForm = yo`<div class="col s12 m7">
 		</div>
 	</div>
 	<div class="row">
-		¿Tienes una cuenta? <a href="/signin" class="l-signin">Entrar</a>
+		<div class="login-box">
+			¿Tienes una cuenta? <a href="/signin" class="l-signin">Entrar</a>
+		</div>
 	</div>
 </div>`;
 

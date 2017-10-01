@@ -2641,6 +2641,7 @@ var page = require('page');
 require('./homepage');
 require('./signup');
 require('./signin');
+//require('./user-page');
 
 page();
 
@@ -2762,7 +2763,9 @@ var signinForm = yo`<div class="col s12 m7">
 		</div>
 	</div>
 	<div class="row">
-		¿No tienes una cuenta? <a href="/signup" class="l-signin">Regístrate</a>
+		<div class="login-box">
+			¿No tienes una cuenta? <a href="/signup" class="l-signin">Regístrate</a>
+		</div>
 	</div>
 </div>`;
 
@@ -2806,7 +2809,9 @@ var signupForm = yo`<div class="col s12 m7">
 		</div>
 	</div>
 	<div class="row">
-		¿Tienes una cuenta? <a href="/signin" class="l-signin">Entrar</a>
+		<div class="login-box">
+			¿Tienes una cuenta? <a href="/signin" class="l-signin">Entrar</a>
+		</div>
 	</div>
 </div>`;
 
