@@ -57,6 +57,7 @@ body {
 	background-color: pink;
 }
 
+
 .signup-form .btn.btn-signup {
 	background-color: $secundary-color;
 	color: white;
@@ -90,4 +91,9 @@ body {
 
 .timeline {
 	padding: 0;
+}
+
+.row .col.offset-l3 {
+	margin-left: 15%;
+	width: 70%;
 }

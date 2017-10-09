@@ -2698,16 +2698,16 @@ module.exports = function layout(content) {
 },{"yo-yo":15}],22:[function(require,module,exports){
 var yo = require('yo-yo');
 
-module.exports = yo`<div class="carousel">
-  <a class="carousel-item" href="#one!"><img src="rodizio.png"></a>
-  <a class="carousel-item" href="#two!"><img src="Jangada.png"></a>
-  <a class="carousel-item" href="#three!"><img src="bostons.png"></a>
-  <a class="carousel-item" href="#four!"><img src="tratoria.jpg"></a>
-  <a class="carousel-item" href="#five!"><img src="meson-del-angel.jpg"></a>
+module.exports = yo`<div class="carousel carousel-slider">
+    <a class="carousel-item" href="#one!"><img src="rodizio.png"></a>
+    <a class="carousel-item" href="#two!"><img src="Jangada.png"></a>
+    <a class="carousel-item" href="#three!"><img src="bostons.png"></a>
+    <a class="carousel-item" href="#four!"><img src="tratoria.jpg"></a>
+    <a class="carousel-item" href="#five!"><img src="meson-del-angel.jpg"></a>
 </div>`;
 
 $(document).ready(function () {
-  $('.carousel').carousel();
+    $('.carousel.carousel-slider').carousel({ fullWidth: true });
 });
 
 // <div class="row">
